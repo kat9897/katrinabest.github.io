@@ -607,6 +607,11 @@ progress {
   height: auto;
 }
 
+.img-fluid-h {
+  max-height: 100%;
+  width: auto;
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
@@ -11620,6 +11625,17 @@ body {
   }
 }
 
+.gradience-section {
+  padding-top: 25rem;
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 85%);
+}
+
+.gradience-section-w-to-b {
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 85%);
+}
+
 .about-section {
   padding-top: 10rem;
   background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
@@ -11720,20 +11736,40 @@ body {
 
 /* Trying modal styling */
 
+.video-container {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+   width: 50%;
+   height: auto;
+   padding-bottom: 40%;
 
+}
+.video {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+}
 
-
-#projects .portfolio-item {
+#projects .portfolio-item, 
+#courses .portfolio-item,
+#awards .portfolio-item {
   max-width: 26rem;
   margin-left: auto;
   margin-right: auto;
 }
-#projects .portfolio-item .portfolio-link {
+#projects .portfolio-item .portfolio-link,
+#courses .portfolio-item .portfolio-link,
+#awards .portfolio-item .portfolio-link {
   position: relative;
   display: block;
   margin: 0 auto;
 }
-#projects .portfolio-item .portfolio-link .portfolio-hover {
+#projects .portfolio-item .portfolio-link .portfolio-hover,
+#courses .portfolio-item .portfolio-link .portfolio-hover,
+#awards .portfolio-item .portfolio-link .portfolio-hover {
   display: flex;
   position: absolute;
   width: 100%;
@@ -11744,25 +11780,35 @@ body {
   opacity: 0;
   transition: opacity ease-in-out 0.25s;
 }
-#projects .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+#projects .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content,
+#courses .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content,
+#awards .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
   font-size: 1.25rem;
   color: white;
 }
-#projects .portfolio-item .portfolio-link:hover .portfolio-hover {
+#projects .portfolio-item .portfolio-link:hover .portfolio-hover,
+#courses .portfolio-item .portfolio-link:hover .portfolio-hover,
+#awards .portfolio-item .portfolio-link:hover .portfolio-hover {
   opacity: 0.5;
 }
-#projects .portfolio-item .portfolio-caption {
+#projects .portfolio-item .portfolio-caption,
+#courses .portfolio-item .portfolio-caption,
+#awards .portfolio-item .portfolio-caption {
   padding: 1.5rem;
   text-align: center;
   background-color: #fff;
 }
-#projects .portfolio-item .portfolio-caption .portfolio-caption-heading {
+#projects .portfolio-item .portfolio-caption .portfolio-caption-heading,
+#courses .portfolio-item .portfolio-caption .portfolio-caption-heading,
+#awards .portfolio-item .portfolio-caption .portfolio-caption-heading {
   font-size: 1.5rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   margin-bottom: 0;
 }
-#projects .portfolio-item .portfolio-caption .portfolio-caption-subheading {
+#projects .portfolio-item .portfolio-caption .portfolio-caption-subheading,
+#courses .portfolio-item .portfolio-caption .portfolio-caption-subheading,
+#awards .portfolio-item .portfolio-caption .portfolio-caption-subheading {
   font-style: italic;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
