@@ -11745,6 +11745,15 @@ body {
    padding-bottom: 40%;
 
 }
+
+.featured {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
 .video {
    position: absolute;
    top: 0;
